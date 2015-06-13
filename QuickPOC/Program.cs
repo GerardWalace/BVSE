@@ -1,4 +1,5 @@
 ﻿using LibGit2Sharp;
+using QuickPOC.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +13,7 @@ namespace QuickPOC
     {
         static void Main(string[] args)
         {
-            DirtyTest.Run();
+            
         }
     }
 }
