@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlameVSPackage_UnitTests", "BlameVSPackage\BlameVSPackage_UnitTests\BlameVSPackage_UnitTests.csproj", "{362962D0-E5BE-41F8-B6D5-6A168BDEA918}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickPOC", "QuickPOC\QuickPOC.csproj", "{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{362962D0-E5BE-41F8-B6D5-6A168BDEA918}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{362962D0-E5BE-41F8-B6D5-6A168BDEA918}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{362962D0-E5BE-41F8-B6D5-6A168BDEA918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
