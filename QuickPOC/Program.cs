@@ -11,12 +11,12 @@ namespace QuickPOC
 {
     class Program
     {
-        public const string PATH_REPO = @"C:\Users\Administrator\Desktop\BVSE_Test";
+        public const string PATH_REPO = @"C:\Users\Administrator\Desktop\Bootstrap";
 
         static void Main(string[] args)
         {            
             // Test du ViewModel
-            var viewModel = new BlamedFileViewModel("MonFichier.txt");
+            var viewModel = new BlamedFileViewModel(@"docs\assets\js\customize.min.js");
 
             foreach (var line in viewModel.Lines)
                 Console.WriteLine("{0} | {1} | {2} : {3}"

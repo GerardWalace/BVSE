@@ -32,7 +32,7 @@ namespace QuickPOC.ViewModels
                 };
 
                 // On effectue le Blame
-                var blameHunkCollection = repo.Blame(filePath, blameOptions);
+                var blameHunkCollection = repo.Blame(filePath, blameOptions); // TODO : Alerte Optimisation
 
                 // Le Blame venant sans le texte, on recupère le text du dernier commit
                 var logEntries = repo.Commits.QueryBy(filePath);
@@ -64,7 +64,7 @@ namespace QuickPOC.ViewModels
                 // On met à jour nos trois propriétés
                 this.Lines = linesViewModel;
                 this.CommitShown = new CommitViewModel(startingCommitSha);
-                this.CommitsHistory = logEntries.Select(l => new CommitViewModel(l.Commit.Sha)).ToList<ICommitViewModel>();
+                this.CommitsHistory = logEntries.Select(l => new CommitViewModel(l.Commit.Sha)).ToList<ICommitViewModel>(); // TODO : Alerte Optimisation
             }
         }
 
