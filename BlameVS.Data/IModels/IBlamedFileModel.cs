@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.IModels
+namespace BlameVS.Data.IModels
 {
-    interface IBlamedFileModel
+    public interface IBlamedFileModel
     {
     }
 }

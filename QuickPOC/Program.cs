@@ -1,5 +1,6 @@
-﻿using LibGit2Sharp;
-using QuickPOC.ViewModels;
+﻿using BlameVS.Presentation.IViewModels;
+using BlameVS.Presentation.ViewModels;
+using LibGit2Sharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC
+namespace BlameVS.Presentation
 {
     class Program
     {
@@ -16,7 +17,11 @@ namespace QuickPOC
         static void Main(string[] args)
         {            
             // Test du ViewModel
-            var viewModel = new BlamedFileViewModel(@"docs\assets\js\customize.min.js");
+            IBlamedFileViewModel viewModel = null;
+            using (var repo = new Repository(PATH_REPO))
+            {
+                viewModel = new BlamedFileViewModel(repo, @"docs\assets\js\customize.min.js");
+            }
 
             foreach (var line in viewModel.Lines)
                 Console.WriteLine("{0} | {1} | {2} : {3}"

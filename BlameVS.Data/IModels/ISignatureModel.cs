@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.IViewModels
+namespace BlameVS.Data.IModels
 {
-    interface ISignatureViewModel
+    public interface ISignatureModel
     {
         string Email { get; }
 
         string Name { get; }
 
-        DateTimeOffset? When { get; }
+        DateTimeOffset When { get; }
     }
 }

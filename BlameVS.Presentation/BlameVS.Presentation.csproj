@@ -5,17 +5,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{992F5861-9C95-4D34-BFD7-84365EAA27B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuickPOC</RootNamespace>
-    <AssemblyName>QuickPOC</AssemblyName>
+    <RootNamespace>BlameVS.Presentation</RootNamespace>
+    <AssemblyName>BlameVS.Presentation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>5ef7dcf8</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>5e4ff0e8</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +24,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,22 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DirtyTest.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="IViewModels\IBlamedFileViewModel.cs" />
+    <Compile Include="IViewModels\IBlamedLineViewModel.cs" />
+    <Compile Include="IViewModels\ICommitViewModel.cs" />
+    <Compile Include="IViewModels\ISignatureViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BlamedFileViewModel.cs" />
+    <Compile Include="ViewModels\BlamedLineViewModel.cs" />
+    <Compile Include="ViewModels\CommitViewModel.cs" />
+    <Compile Include="ViewModels\SignatureViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlameVS.Data\BlameVS.Data.csproj">
       <Project>{b584ae98-1f9e-4934-966f-a63e3aa73b19}</Project>
       <Name>BlameVS.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BlameVS.Presentation\BlameVS.Presentation.csproj">
-      <Project>{992f5861-9c95-4d34-bfd7-84365eaa27b2}</Project>
-      <Name>BlameVS.Presentation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

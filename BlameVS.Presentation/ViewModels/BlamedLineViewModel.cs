@@ -1,19 +1,20 @@
-﻿using QuickPOC.IViewModels;
+﻿using BlameVS.Presentation.IViewModels;
+using LibGit2Sharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.ViewModels
+namespace BlameVS.Presentation.ViewModels
 {
     class BlamedLineViewModel : IBlamedLineViewModel
     {
-        public BlamedLineViewModel(string text, int lineNumber, string commitSha)
+        public BlamedLineViewModel(IRepository repository, string text, int lineNumber, string commitSha)
         {
             this.Text = text;
             this.LineNumber = lineNumber;
-            this.Commit = new CommitViewModel(commitSha);
+            this.Commit = new CommitViewModel(repository, commitSha);
         }
 
         public string Text { get; protected set; }

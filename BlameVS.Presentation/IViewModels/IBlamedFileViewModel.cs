@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.IViewModels
+namespace BlameVS.Presentation.IViewModels
 {
-    interface IBlamedFileViewModel
+    public interface IBlamedFileViewModel
     {
         IList<IBlamedLineViewModel> Lines { get; }
 

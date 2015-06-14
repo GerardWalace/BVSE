@@ -1,26 +1,27 @@
-﻿using System;
+﻿using BlameVS.Data.IModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.IModels
+namespace BlameVS.Data.Models
 {
-    class SignatureModel : ISignatureModel
+    public class CommitModel : ICommitModel
     {
-        public string Email
+        public string Sha 
         {
             get;
             set;
         }
 
-        public string Name
+        public string Message
         {
             get;
             set;
         }
 
-        public DateTimeOffset When
+        public ISignatureModel Author
         {
             get;
             set;

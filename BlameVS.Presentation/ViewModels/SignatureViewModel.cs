@@ -1,12 +1,12 @@
-﻿using QuickPOC.IModels;
-using QuickPOC.IViewModels;
+﻿using BlameVS.Data.IModels;
+using BlameVS.Presentation.IViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.ViewModels
+namespace BlameVS.Presentation.ViewModels
 {
     class SignatureViewModel : ISignatureViewModel
     {

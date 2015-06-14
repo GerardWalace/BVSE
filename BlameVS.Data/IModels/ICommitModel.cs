@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.IViewModels
+namespace BlameVS.Data.IModels
 {
-    interface ICommitViewModel
+    public interface ICommitModel
     {
         string Sha { get; }
 
         string Message { get; }
 
-        ISignatureViewModel Author { get; }
+        ISignatureModel Author { get; }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPOC.IViewModels
+namespace BlameVS.Presentation.IViewModels
 {
-    interface IBlamedLineViewModel
+    public interface IBlamedLineViewModel
     {
         string Text { get; }
 

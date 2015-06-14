@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlameVSPackage_UnitTests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickPOC", "QuickPOC\QuickPOC.csproj", "{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlameVS.Data", "BlameVS.Data\BlameVS.Data.csproj", "{B584AE98-1F9E-4934-966F-A63E3AA73B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlameVS.Presentation", "BlameVS.Presentation\BlameVS.Presentation.csproj", "{992F5861-9C95-4D34-BFD7-84365EAA27B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFD1F8AE-E3B0-4DA7-A64F-F7F684D353ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B584AE98-1F9E-4934-966F-A63E3AA73B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B584AE98-1F9E-4934-966F-A63E3AA73B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B584AE98-1F9E-4934-966F-A63E3AA73B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B584AE98-1F9E-4934-966F-A63E3AA73B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992F5861-9C95-4D34-BFD7-84365EAA27B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992F5861-9C95-4D34-BFD7-84365EAA27B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992F5861-9C95-4D34-BFD7-84365EAA27B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992F5861-9C95-4D34-BFD7-84365EAA27B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
