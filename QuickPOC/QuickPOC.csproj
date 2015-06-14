@@ -48,14 +48,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DirtyTest.cs" />
+    <Compile Include="IModels\IBlamedFileModel.cs" />
+    <Compile Include="IModels\IBlamedLineModel.cs" />
+    <Compile Include="IModels\ICommitModel.cs" />
+    <Compile Include="IModels\ISignatureModel.cs" />
+    <Compile Include="IViewModels\IBlamedFileViewModel.cs" />
+    <Compile Include="IViewModels\IBlamedLineViewModel.cs" />
+    <Compile Include="IViewModels\ICommitViewModel.cs" />
+    <Compile Include="IViewModels\ISignatureViewModel.cs" />
+    <Compile Include="Models\CommitModel.cs" />
+    <Compile Include="Models\ISignatureModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\ViewModels.cs" />
+    <Compile Include="ViewModels\BlamedFileViewModel.cs" />
+    <Compile Include="ViewModels\BlamedLineViewModel.cs" />
+    <Compile Include="ViewModels\CommitViewModel.cs" />
+    <Compile Include="ViewModels\SignatureViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

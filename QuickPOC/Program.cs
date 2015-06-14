@@ -11,9 +11,19 @@ namespace QuickPOC
 {
     class Program
     {
+        public const string PATH_REPO = @"C:\Users\Administrator\Desktop\BVSE_Test";
+
         static void Main(string[] args)
-        {
-            
+        {            
+            // Test du ViewModel
+            var viewModel = new BlamedFileViewModel("MonFichier.txt");
+
+            foreach (var line in viewModel.Lines)
+                Console.WriteLine("{0} | {1} | {2} : {3}"
+                    , line.Commit.Author.When
+                    , line.Commit.Sha
+                    , line.LineNumber
+                    , line.Text);
         }
     }
 }

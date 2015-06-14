@@ -22,7 +22,7 @@ namespace QuickPOC
             {
                 var blameOptions = new BlameOptions()
                 {
-                    Strategy = BlameStrategy.Default, // Classical Blame (the only one usable in libgit2 for the moment
+                    Strategy = BlameStrategy.Default, // Classical Blame (the only one usable in libgit2 for the moment)
                     StartingAt = null, // HEAD
                     StoppingAt = null, // Initial Commit
                     MinLine = 0, // First Line of the file
