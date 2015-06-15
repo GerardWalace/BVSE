@@ -1,0 +1,6 @@
+[submodule "libgit2sharp"]
+	path = libgit2sharp
+	url = https://github.com/GerardWalace/libgit2sharp.git
+[submodule "BVSE_Test"]
+	path = BVSE_Test
+	url = https://github.com/GerardWalace/BVSE_Test.git
